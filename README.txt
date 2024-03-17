@@ -14,7 +14,7 @@ send_to_twinkle_turtles.scpt
 
 Sends the image and text note to the group iMessage thread named, in my case, The Twinkly Turtles. Doing it this way because one of the members of the group only has an iCloud address, not a phone number. Services such as Twilio only target phone numbers for sending messages, not iCloud addresses via iMessage. This wrinkle causes has major strategy implications, such as needing to run this whole process from my laptop, not from a cloud service, as I would prefer. 
 
-Sending the file only works if the image is within the /Users/username/Pictures folder. 
+Sending the file only works if the image is within the /Users/username/Pictures folder. To keep things together, I put all the files into this folder, except the .plist. I don't know why this is a requirement, but found the information here: https://apple.stackexchange.com/questions/429586/cannot-send-image-files-from-messages-using-applescript-on-monterey
 
 Read_SmugMug_log.py
 
