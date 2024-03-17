@@ -22,7 +22,7 @@ Reads the log file smugmug_log.txt and pulls out the album name and URL of the m
 
 wrapper_SmugMug_Random.sh
 
-This is a bash script that runs on days when the random image should be sent out. I chooses a random time to send the image (SmugMug_Random.py), and then follows up at a random time between 5 and 10 minutes later with the answer (Read_SmugMug_log.py).
+This is a bash script that runs on days when the random image should be sent out. It chooses a random time to send the image (SmugMug_Random.py), and then follows up at a random time between 5 and 10 minutes later with the answer (Read_SmugMug_log.py).
 
 com.user.smugmug_random.plist
 
@@ -35,7 +35,7 @@ Various things need to happen to make this all work. I did many of these while b
 
 - API keys and Tokens from SmugMug
 
-- Permissions for Apple Script to access files and Messenger - this can be frustrating because at least in my version of MacOS this permission is only granted when the program first try to access something. 
+- Permissions for Apple Script to access files and Messenger - this can be frustrating because at least in my version of MacOS (13.4 (22F66)) this permission is only granted when the programs first try to access something. 
 
 -  load the .plist with launchctl load ~/Library/LaunchAgents/com.user.smugmug_random.plist -- I think this now will launch every time I restart the computer, but am not yet sure.
 
@@ -50,7 +50,7 @@ tell application "Messages"
 	end repeat
 end tell
 
-Gave me a bunch of errors with actual chat IDs that I tested by trial and error to figure out which was the correct one for my desired group thread.
+Gave me a bunch of errors with actual chat IDs that I tested by trial and error to figure out which was the correct one for my desired group thread. People on my various group threads may have been annoyed by my testing...
  
 - SmugMug authentication: The major issue was using oauth = OAuth1Session(API_KEY, client_secret=API_SECRET, resource_owner_key=ACCESS_TOKEN, resource_owner_secret=ACCESS_TOKEN_SECRET)
 and 
