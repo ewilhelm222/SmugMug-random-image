@@ -12,7 +12,7 @@ Uses the SmugMug API to get all of the folders. Makes a random choice among the 
 
 send_to_twinkle_turtles.scpt
 
-Sends the image on and text note to the group iMessage thread named, in my case, The Twinkly Turtles. Doing it this way because on of the members of the group only has an iCloud address, not a phone number. Services such as Twilio only target phone numbers for sending messages, not iCloud addresses via iMessage. 
+Sends the image and text note to the group iMessage thread named, in my case, The Twinkly Turtles. Doing it this way because one of the members of the group only has an iCloud address, not a phone number. Services such as Twilio only target phone numbers for sending messages, not iCloud addresses via iMessage. This wrinkle causes has major strategy implications, such as needing to run this whole process from my laptop, not from a cloud service, as I would prefer. 
 
 Sending the file only works if the image is within the /Users/username/Pictures folder. 
 
